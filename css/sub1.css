@@ -107,19 +107,22 @@ header ul li a img {
     width: 100%;
 }
 .rooms{
-    height: 1580px;
+    height: 1700px;
     flex-wrap: wrap;
     display: flex; 
     align-content: space-between;
+    overflow: hidden;
 }
 .left1{
     box-sizing: border-box;
     width: 830px;
+    
 }
 .right1{
     width: 490px;
     padding-left: 60px;
     box-sizing: border-box;
+    
 }
 .right1 h2{
     margin: 30px 0 0;
