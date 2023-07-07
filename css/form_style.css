@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+body{
+    font-family: "Noto Sans KR";
+}
+
+/* 예약 폼 크기 */
+.formbox{
+    width: 100%;
+    background-color: rgba(50, 62, 116, 0.9);
+    margin-bottom: 80px;
+    
+}
+.form {
+    
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    
+    
+}
+.form ul li{
+ margin: 0 10px;    
+}
+
+/* 예약폼 글자 */
+.form h2 {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* 출발 도착 꾸미기 */
+.form .date {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .date li:nth-child(2) {
+    padding: 30px 20px 0;
+    color: #fff;
+}
+
+.form .date li input {
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    padding: 10px 0;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+
+}
+
+.form .date li input:focus{
+    outline: none;
+}
+
+.form .date li input::placeholder{
+    color: #fff;
+}
+
+/* 인원 선택 꾸미기*/
+.number {
+    z-index: 5;
+    position: relative;
+    width: 100px;
+    height: 38px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.number .label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    border: 0 none;
+    outline: 0 none;
+    background: transparent;
+    cursor: pointer;
+    color: #fff;
+}
+
+.number .optionList {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: 0.3s ease-in;
+}
+
+.number.active .optionList {
+    max-height: 500px;
+}
+
+.number .optionItem {
+    border-bottom: 1px dashed #fff;
+    padding: 10px 0;
+    transition: .1s;
+}
+
+.number .optionItem:hover {
+    background: #000;
+}
+
+.number .optionItem:last-child {
+    border-bottom: 0 none;
+}
+
+/* 예약하기버튼 꾸기미 */
+.form .btn {
+    font-family: 'NixgonFonts';
+    font-weight: 500;
+    display: block;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 24px 20px;
+}
+
+.form .btn:hover {
+    background-color: #fff;
+    color: #000;
+}

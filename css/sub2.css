@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: black;
+    font-size: 20px;
+    font-family: "Noto Sans KR";
+    /*300 얇게 500 보통 700볼드*/
+    min-width: 1320px;
+
+
+}
+
+h1 {
+    font-family: 'NixgonFonts';
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'NixgonFonts';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header {
+    width: 1320px;
+    margin: 40px auto;
+    font-weight: 700;
+    position: relative;
+
+}
+
+header>ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+header>ul>li {
+    position: relative;
+
+
+}
+
+header>ul>li>a:hover {
+    color: #ED6C36;
+}
+
+header>ul>li>a {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'NixgonFonts';
+    color: black;
+}
+
+header ul li a img {
+    position: absolute;
+    left: calc(50% - 55px);
+    top: calc(50% - 29.5px);
+}
+
+/* 헤더 끝 */
+
+.top{
+    width: 100%;
+    height: 300px;
+    background: url(../image/sub2_banner.png) no-repeat
+    center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+   
+}
+
+.top h1{
+    
+    color: #fff;
+    font-size: 70px;
+}
+/* 탑 끝 */
+/* 탭메뉴 꾸미기 */
+.tab{
+    width:100%; 
+    overflow: hidden;    
+  }
+  .tabnav{
+    display: flex;
+    justify-content: center;
+    width:1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .tabnav li{
+    flex: 1;
+  }
+  .tabnav li a{ 
+    text-align: center;
+    display: block;
+    padding: 20px 40px;
+    
+    background-color: #BCBCBC;
+   color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* 탭메뉴 클릭했을 때 변화 꾸미기 */
+  .tabnav li .active{
+    
+
+  }
+  .tabnav li a:hover,
+  .tabnav li a.active{
+   
+    background:#323e74; 
+    color:#fff; 
+  }
+  
+  /* 탭컨텐츠 꾸미기 */
+  .tabcontent{
+    width: 100%;    
+    margin: 100px auto;
+    
+  }
+
+  #tab01{
+    width: 1000px;
+    margin: auto;
+  }
+  #tab01 h1{
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  #tab01 h2{
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 15px;
+    color: #575757;
+    line-height: 35px;
+  }
+/* 텝메뉴 01 끝 */
+
+/* 아코디언 */
+#board { 
+
+}
+#board li{ 
+	width:100%; 
+}
+#board li a{ 
+    color: #000;
+	display:block;
+	border-bottom:1px solid #CCC; 
+	padding:10px 20px;  
+	background: url(../image/sub2_icondown.png) no-repeat 98% 50%;
+    background-size: 20px;
+}
+#board li:hover a{  
+	font-weight:bold; 
+    color: #000;
+
+}
+#board li.on a{
+	font-weight:bold; 
+
+	background:  url(../image/sub2_iconup.png) no-repeat 98% 50%;
+    background-size: 20px;
+}
+#board li:last-child a{
+	border-top:0;
+}
+#board li div{ 
+	width:100%; 
+	border:1px solid #ccc; 
+    background-color: #F2F2F2;
+	border-top:0;
+	padding:10px 30px; 
+	box-sizing:border-box; 
+	height:100%;
+	display:none;
+}
+
+#board p{
+    font-size: 18px;
+    font-family: "Noto Sans KR";
+    display: flex;
+    
+}
+#board p span{
+    padding-left: 10px;
+}
+/* 탭메뉴 01 끝 */
+
+/* 탭메뉴 02 */
+
+#tab02{
+    width: 100%;
+    margin: auto;
+  }
+.map{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 80px;
+    margin: auto;
+}
+.map iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#tab02in{
+    width: 1320px;
+    margin: auto;
+}
+
+#tab02in h1{
+    font-family: 'NixgonFonts';
+    margin-top: 30px;
+    font-size: 28px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+}
+#tab02in h2{
+    font-size: 18px;
+    font-family: "Noto Sans KR";
+    margin-bottom: 60px;
+    line-height: 40px;
+   
+}
+#tab02in h3{
+    
+    font-size: 25px;
+    font-family: 'NixgonFonts';
+   
+}
+#tab02in h3{
+    padding: 20px 0;
+    font-size: 25px;
+    font-family: "Noto Sans KR";
+}
+.in_in{
+    padding: 10px 0  10px 20px;
+    border-top: 1px solid #666;
+    background-color: #F2F2F2;
+}
+
+
+
+
+
+
+
+
+
+/* 푸터 */
+footer {
+    width: 100%;
+    background-color: #2A2A2A;
+
+}
+
+.fot {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.fot ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot img {
+    margin: 40px 0 0;
+}
+
+.fot h3 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.fotright a img {
+    display: inline-block;
+    margin: 120px 20px 0 0;
+    filter: invert(0.85);
+}
+
+.fotright a:hover img {
+    filter: invert(0);
+}

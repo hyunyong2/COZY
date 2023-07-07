@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: black;
+    font-size: 20px;
+    font-family: "Noto Sans KR";
+    /*300 얇게 500 보통 700볼드*/
+    min-width: 1320px;
+
+
+}
+
+h1 {
+    font-family: 'NixgonFonts';
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'NixgonFonts';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header {
+    width: 1320px;
+    margin: 40px auto;
+    font-weight: 700;
+    position: relative;
+
+}
+
+header>ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+header>ul>li {
+    position: relative;
+
+
+}
+
+header>ul>li>a:hover {
+    color: #ED6C36;
+}
+
+header>ul>li>a {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'NixgonFonts';
+    color: black;
+}
+
+header ul li a img {
+    position: absolute;
+    left: calc(50% - 55px);
+    top: calc(50% - 29.5px);
+}
+
+/* 헤더 끝 */
+
+
+
+.top{
+    width: 100%;
+    height: 300px;
+    background: url(../image/sub4_banner.png) no-repeat center top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+   
+}
+
+.top h1{
+    
+    color: #fff;
+    font-size: 70px;
+}
+/* 탑 끝 */
+
+/* 탭메뉴 꾸미기 */
+.tab{
+    width:100%; 
+    overflow: hidden;    
+  }
+  .tabnav{
+    display: flex;
+    justify-content: center;
+    width:1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .tabnav li{
+    flex: 1;
+  }
+  .tabnav li a{ 
+    text-align: center;
+    display: block;
+    padding: 20px 40px;
+    
+    background-color: #BCBCBC;
+   color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* 탭메뉴 클릭했을 때 변화 꾸미기 */
+  .tabnav li .active{
+    
+
+  }
+  .tabnav li a:hover,
+  .tabnav li a.active{
+   
+    background:#323e74; 
+    color:#fff; 
+  }
+  
+  /* 탭컨텐츠 꾸미기 */
+  .tabcontent{
+    width: 100%;    
+    margin: 100px auto 0;
+    
+  }
+
+  #tab01{
+    width: 100%;
+    margin: auto;
+  }
+  #tab01 h1{
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  #tab01> h2{
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 15px;
+    color: #575757;
+    line-height: 35px;
+  }
+
+  #tab01> p{
+    font-size: 30px;
+  }
+  #tab01 input{
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+  }
+
+#tab01 table{
+    width: 520px;
+    margin: auto;
+}
+#tab01 table th{
+    width: 150px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Noto Sans KR";
+    box-sizing: border-box;
+}
+#tab01 table td{
+    width: calc(520px - 150px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+  #tab01 input[type="tel"]{
+    width: 30.2%;
+  }
+
+#tab01 h4{
+    margin: 15px 0;
+    text-align: center;
+}
+#tab01 a{
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    padding: 5px 20px;
+    background-color: #323e74;
+    color: #fff;
+    border: 3px solid #323e74;
+}
+
+.tab01in h2{
+    width: 1000px;
+    margin: 0 auto 20px;
+    color: #323e74;
+    font-size: 25px;
+    font-family: "Noto Sans KR";
+    
+   
+}
+.tab01in_in{
+    width: 100%;
+    background-color: #F2F2F2;
+}
+.tab01in_in p{
+    line-height: 30px;
+    padding: 40px 0;
+    width: 1000px;
+    margin: auto;
+    font-size: 15px;
+    font-family: "Noto Sans KR";
+    color: #666;
+}
+#tab01 a:hover{
+    background-color: #fff;
+    color: #323e74;
+}
+/* 텝메뉴 01 끝 */
+/* 텝메뉴2 */
+#tab02{
+    width: 100%;
+    
+}
+.tab2menu{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto 80px;
+}
+.menu1{
+    border: 1px solid #BCBCBC;
+    width: 600px;
+    box-sizing: border-box;   
+}
+.menu1 h1{
+    text-align: center;
+    margin: 20px 0 30px;
+}
+.menu1 table{
+    width: 600px;
+    
+    text-align: center;
+    margin-bottom: 30px;
+}
+.menu1 th{
+    padding-top: 5px;
+}
+.menu1 td{
+    padding-top: 5px;
+}
+.menu1 th:nth-child(1),.menu1  td:nth-child(1){
+    color: red;
+    
+}
+.menu1 td:nth-child(1) p,
+.menu1 td:nth-last-child(1) p{
+text-decoration: line-through;
+}
+.menu1 th:nth-last-child(1), .menu1 td:nth-last-child(1){
+    color: rgb(65, 65, 255);
+}
+
+
+.menu1 small{
+    color: #666;
+    font-size: 12px;
+}
+.red p{
+    color: red;
+    text-decoration: line-through;
+}
+/* 메뉴1 끝 */
+/* 메뉴2 */
+
+.menu2{
+    padding: 30px;
+    width: 350px;
+    border: 1px solid #BCBCBC;
+    box-sizing: border-box;
+}
+.menu2 h2{
+    font-family: "Noto Sans KR";
+    font-size: 25px;
+    color: #666;
+}
+.menu2 input{
+    margin-bottom: 40px;
+    border: 1px solid #e8e8e8;
+    font-family: 'NixgonFonts';
+    font-size: 17px;
+    color: #666;
+    
+}
+.menu2 input[type="date"]{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+   color: rgba(0, 0, 0, 0); 
+   opacity: 1;
+   display: block;
+   /* background: url('../img/day.png') no-repeat 98% 50%; 아이콘 대체  */
+   width: 30px;
+   height: 25px;
+   border-width: thin;
+}
+
+.menu2 .up{
+    padding: 8px 10px;
+    width: 60px;
+}
+.menu2 .people{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.check{
+    background-color: #e8e8e8;
+    padding: 30px 0;
+    width: 1000px;
+    margin: 0 auto 80px;
+    text-align: center;
+    border-bottom: 1px solid #bcbcbc;
+    border-top: 1px solid #bcbcbc;
+    
+
+}
+.check h3{
+    
+    font-size: 25px;
+    line-height: 60px;
+}
+.menu2 h4{
+    margin: 20px 0;
+    
+}
+.menu2 a{
+    font-family: "Noto Sans KR";
+    font-size: 25px;
+    padding: 5px 20px;
+    background-color: #323e74;
+    color: #fff;
+    border: 3px solid #323e74;
+}
+.menu2 a:hover{
+     background-color: #fff;
+    color: #323e74;
+}
+
+
+
+
+
+
+/* 푸터 */
+footer {
+    width: 100%;
+    background-color: #2A2A2A;
+
+}
+
+.fot {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.fot ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot img {
+    margin: 40px 0 0;
+}
+
+.fot h3 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.fotright a img {
+    display: inline-block;
+    margin: 120px 20px 0 0;
+    filter: invert(0.85);
+}
+
+.fotright a:hover img {
+    filter: invert(0);
+}

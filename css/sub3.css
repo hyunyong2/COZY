@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: black;
+    font-size: 20px;
+    font-family: "Noto Sans KR";
+    /*300 얇게 500 보통 700볼드*/
+    min-width: 1320px;
+
+
+}
+
+h1 {
+    font-family: 'NixgonFonts';
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'NixgonFonts';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.fjalla{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+header {
+    width: 1320px;
+    margin: 40px auto;
+    font-weight: 700;
+    position: relative;
+
+}
+
+header>ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+header>ul>li {
+    position: relative;
+
+
+}
+
+header>ul>li>a:hover {
+    color: #ED6C36;
+}
+
+header>ul>li>a {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'NixgonFonts';
+    color: black;
+}
+
+header ul li a img {
+    position: absolute;
+    left: calc(50% - 55px);
+    top: calc(50% - 29.5px);
+}
+
+/* 헤더 끝 */
+.top{
+    width: 100%;
+    height: 300px;
+    background: url(../image/sub3_banner.png) no-repeat center top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+   
+}
+
+.top h1{
+    
+    color: #fff;
+    font-size: 70px;
+}
+/* 탑 끝 */
+/* 메인 */
+section{
+    width: 1320px;
+    margin: 0 auto 80px;
+}
+.mainevent{
+    width: 1320px;
+    margin: auto;
+}
+.event{
+   border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    margin-bottom: 20px;
+
+    color: #000;
+}
+.event .left, .event .left1{
+    width: 600px;
+    box-sizing: border-box;
+}
+.event .right{
+    width: calc(100% - 600px);
+    box-sizing: border-box;
+    background: url(../image/sub3_ing.png) no-repeat right top;
+    padding: 40px 0 0 30px;
+}
+.event .right1{
+    width: calc(100% - 600px);
+    box-sizing: border-box;
+    background: url(../image/sub3_end.png) no-repeat right top;
+    padding: 40px 0 0 30px;
+}
+.right h1, .right1 h1{
+    line-height: 35px;
+    font-family: 'NixgonFonts';
+    font-size: 28px;
+}
+.right h2, .right1 h2{
+    margin-top: 50px;
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+}
+.right h4, .right1 h4{
+    font-size: 10px;
+    font-family: "Noto Sans KR";
+    color: red;
+}
+.right1 span{
+    text-decoration:line-through 
+}
+
+
+
+ .left{
+    overflow: hidden;
+    
+}
+.left img{
+    transition: 1s;
+    display: block;
+}
+.event:hover .left img{
+    transform: scale(1.05);
+
+}
+.event:hover {
+    background: #ccc;
+}
+.event{
+    transition: 1s;
+}
+/* 종료 이미지 */
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    padding-top: 20%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 1s;
+}
+
+.event:hover .box {
+    opacity: 1;
+}
+
+.event .left1 a {
+    display: block;
+    overflow: hidden;
+}
+
+.event .left1 {
+    overflow: hidden;
+    position: relative;
+}
+
+.event .left1 img {
+    transition: 1s;
+    display: block;
+}
+
+.event .left1 a:hover img {
+    transform: scale(1.02);
+}
+
+
+
+
+
+/* 푸터 */
+footer {
+    width: 100%;
+    background-color: #2A2A2A;
+
+}
+
+.fot {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.fot ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot img {
+    margin: 40px 0 0;
+}
+
+.fot h3 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.fotright a img {
+    display: inline-block;
+    margin: 120px 20px 0 0;
+    filter: invert(0.85);
+}
+
+.fotright a:hover img {
+    filter: invert(0);
+}

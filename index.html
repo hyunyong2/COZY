@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COZY</title>
+
+    <!-- 슬라이드 css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/><!--수정X-->
+	<link href="css/slidebanner.css" rel="stylesheet" type="text/css"><!--디자인에 맞게 수정-->
+    <!-- aos css -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- 날짜 css -->
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <!-- 예약 창 꾸미기 css -->
+    <link rel="stylesheet" href="./css/form_style.css">
+
+    <link href="https://webfontworld.github.io/nixgon/NixgonFonts.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/a.css">
+</head>
+<body>
+
+    <header>
+            <ul>
+                <li><a href="sub1.html">호텔COZY</a></li>
+                <li><a href="sub2.html">고객문의</a></li>
+                <li><a href="index.html"><img src="./image/top_logo.png" alt="로고1"></a></li>
+                <li><a href="sub3.html">이벤트</a></li>
+                <li><a href="sub4.html">예약하기</a></li>
+            </ul>
+        
+    </header>
+    <!-- 헤더 끝 -->
+    
+    <div class="top">
+        <div class="swiper-container slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/main_banner1.png" alt="배너3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main_banner2.png" alt="배너3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main_banner3.png" alt="배너3">
+                </div>
+
+            </div>
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+          </div>
+        <div class="top_banner">
+        <h1>WITH COZY</h1>
+        <h2>───</h2>
+        <h3>아늑함과 특별함이공존하는, <br>
+        추억의 한 점이 될 공간.</h3>
+    </div>
+    </div>
+    <!-- 탑 끝 -->
+   
+    <!-- 예약박스 -->
+    <div class="formbox">
+    <div class="form">
+        <div>
+            <ul class="date">
+                <li>
+                    <h2>체크인</h2>
+                    <input id="datepicker1" type="text" placeholder="날짜를 선택해 주세요.">
+                </li>
+                <li>-</li>
+                <li>
+                    <h2>체크아웃</h2>
+                    <input id="datepicker2" type="text" placeholder="날짜를 선택해 주세요.">
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>객실</h2>
+            <div class="number">
+                <button class="label">객실수</button>
+                <ul class="optionList">
+                    <li class="optionItem">1</li>
+                    <li class="optionItem">2</li>
+                    <li class="optionItem">3</li>
+                    <li class="optionItem">4</li>
+                    <li class="optionItem">5</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2>성인</h2>
+            <div class="number">
+                <button class="label">인원수</button>
+                <ul class="optionList">
+                    <li class="optionItem">1</li>
+                    <li class="optionItem">2</li>
+                    <li class="optionItem">3</li>
+                    <li class="optionItem">4</li>
+                    <li class="optionItem">5</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2>어린이</h2>
+            <div class="number">
+                <button class="label">인원수</button>
+                <ul class="optionList">
+                    <li class="optionItem">1</li>
+                    <li class="optionItem">2</li>
+                    <li class="optionItem">3</li>
+                    <li class="optionItem">4</li>
+                    <li class="optionItem">5</li>
+                </ul>
+            </div>
+        </div>
+        <a href="sub4.html#tab02" class="btn">예약하기</a>
+    </div>
+</div>
+    <!-- 예약박스 끝 -->
+    <div class="maintop" >
+        <h1>호텔COZY는</h1>
+        <h3>코지는 고객님에게 제공합니다.</h3>
+        <ul >
+            <li data-aos="fade-up" ><img src="./image/cozy_lounge.png" alt="라운지">
+            <h2>LOUNGE</h2>
+            <h3>호텔이용객을 위한 라운지바에서 시간 구애 없이 잠시 쉴 수 있도록 도와드립니다.</h3>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300"><img src="./image/cozy_pick-up.png" alt="픽업">
+                <h2>PICK - UP</h2>
+                <h3>호텔이용객을 위한 픽업서비스를 통해 찾기힘든 길,
+                    무거운 짐,
+                    호텔까지 이동간의 스트레스를 
+                    한번에 덜어드립니다.</h3>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="600" ><img src="./image/cozy_safety.png" alt="안전">
+                <h2>SAFETY</h2>
+                <h3>직원 24시간 상주 및 남녀별 다른구역 
+                    구역마다 다른 키로 보다 안전한 
+                    장소를 제공합니다.</h3>
+            </li>
+            </ul>
+    </div>
+    <!-- 메인 탑 끝 -->
+
+    <!-- 메인 룸 -->
+    <div class="mainroom">
+        <h1>COZY타입</h1>
+        <h3>COZY에서 다양한 캡슐을 만나보세요</h3>
+        <div class="typeright">
+        <img src="./image/type.png" alt="타입" data-aos="fade-right">
+        <div class="typeright_1" data-aos="fade-left">
+        <ul>
+            <li>
+                <h2>
+                ECONOMY CLASS
+            </h2>
+        </li>
+            <li>
+                <h2>
+                BUSINESS CLASS
+                </h2>
+            </li>
+            <li>
+                <h2>
+                FIRST CLASS
+                </h2>
+            </li>
+            <li>
+            <p>────</p>
+            <h3>
+                편안함과 기능성을 추구하는 COZY에서는
+고객님들을 위해 3종류의 캡슐 타입이 준비되어 있습니다.
+세련된 공간을 자신의 스타일에 맞추어 선택하세요.
+            </h3>
+            <a href="sub1.html">자세히 보기</a>
+        </li>
+        </ul>
+        
+    </div>   
+    </div>
+    </div>
+    <!-- 메인 룸 끝 -->
+
+    <!-- 센터 배너 -->
+    <div class="center">
+        <div class="center_banner">
+            <h1>SPECIAL THE COZY</h1>
+            <h2>COZY는 고객을 위한 특별한 추억을 제공해주는 <br>
+                완벽한 HOTEL입니다.</h2>
+        </div>
+    </div>
+    <!-- 센터배너 끝 -->
+    <!-- 메인 이벤트 -->
+    <div class="mainevent">
+        <h1>이벤트</h1>
+        <h3>지금 COZY에서는 다양한 혜택이 기다립니다.</h3>
+        <ul>
+            <li><a href="sub3.html"><img src="./image/event1.png" alt="이벤트1">
+                <div class="box">
+                    <h1>자세히 보기</h1>
+                </div>
+            </a></li>
+            <li><a href="sub3.html"><img src="./image/event2.png" alt="이벤트2">
+                <div class="box">
+                    <h1>자세히 보기</h1>
+                </div>
+            </a></li>
+            <li><a href="sub3.html"><img src="./image/event3.png" alt="이벤트3">
+                <div class="box">
+                    <h1>자세히 보기</h1>
+                </div>
+            </a></li>
+        </ul>
+        <p><a href="sub3.html">자세히 보기</a></p>
+        
+    </div>
+    <!-- 메인이벤트 끝 -->
+    <!-- 메인 인스타 -->
+    <div class="maininsta">
+        <h1>인스타그램 후기</h1>
+        <h3>COZY에서의 추억을 함께 나눠주세요.</h3>
+        <ul>
+            <li><img src="./image/insta1.png" alt="인스타1"></li>
+            <li><img src="./image/insta2.png" alt="인스타2"></li>
+            <li><img src="./image/insta3.png" alt="인스타3"></li>
+            <li><img src="./image/insta4.png" alt="인스타4"></li>
+            <li><img src="./image/insta5.png" alt="인스타5"></li>
+            <li><img src="./image/insta6.png" alt="인스타6"></li>
+            <li><img src="./image/insta7.png" alt="인스타7"></li>
+            <li><img src="./image/insta8.png" alt="인스타8"></li>
+        </ul>
+    </div>
+    <!-- 메인 인스타 끝 -->
+    <!-- 푸터 -->
+    <footer>
+        <div class="fot">
+            <ul>
+                <li><a href="index.html"><img src="./image/footer_logo.png" alt="푸터로고"></a>
+                    <h3>부산광역시 중구 중앙대로 26 다원중앙타워 9층</h3>
+                    <h3>E-mail. HY930810@naver.com </h3>
+                    <h3>TEL. 051 - 123 - 4567 </h3></li>
+                    <li class="fotright">
+                        <a href="#"><img src="./image/fot_icon1.png" alt="아이콘1"></a>
+                        <a href="#"><img src="./image/fot_icon2.png" alt="아이콘2"></a>
+                        <a href="#"><img src="./image/fot_icon3.png" alt="아이콘3"></a>
+                        <a href="#"><img src="./image/fot_icon4.png" alt="아이콘4"></a>
+                    </li>
+            </ul>
+            
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js/datepicker.ko.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+    <script src="./js/aos.js"></script><!-- aos 소스 -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><!-- 수정X -->
+	<script src="./js/slidebanner.js"></script><!--디자인에 맞게 수정-->
+    <!-- 배너 슬라이드 업 -->
+    <script src="./js/menu.js"></script>
+    
+</body>
+</html>

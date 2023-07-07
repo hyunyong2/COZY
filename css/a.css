@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: black;
+    font-size: 20px;
+    font-family: "Noto Sans KR";
+    font-weight: 300;
+    /*300 얇게 500 보통 700볼드*/
+    min-width: 1320px;
+
+
+}
+
+h1 {
+    font-family: 'NixgonFonts';
+}
+
+h2 {
+    font-family: 'NixgonFonts';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header {
+    width: 1320px;
+    margin: 40px auto;
+    font-weight: 700;
+    position: relative;
+
+}
+
+header>ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+header>ul>li {
+    position: relative;
+
+
+}
+
+header>ul>li>a:hover {
+    color: #ED6C36;
+}
+
+header>ul>li>a {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'NixgonFonts';
+    color: black;
+}
+
+header ul li a img {
+    position: absolute;
+    left: calc(50% - 55px);
+    top: calc(50% - 29.5px);
+}
+
+
+/* 헤더 끝 */
+.top {
+    width: 100%;
+    position: relative;
+
+}
+
+.top_banner {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.top_banner h1 {
+    font-size: 70px;
+}
+
+.top_banner h3 {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+.slide .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/*이동버튼 영역 색상 바꾸기*/
+.slide .swiper-button-prev,
+.slide .swiper-button-next {
+    color: #ffffff;
+}
+
+/*이동버튼 영역 호버 시 색상 바꾸기*/
+.slide .swiper-button-prev:hover,
+.slide .swiper-button-next:hover {
+    color: #323e74;
+}
+
+.slide .swiper-pagination-bullet {
+    background: #ffffff;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.slide .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.slide .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0px;
+}
+
+/*  */
+.maintop {
+    width: 1320px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.maintop h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.maintop h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.maintop ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maintop ul li {
+    width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+
+.maintop h2 {
+    margin: 20px 0;
+}
+
+/* 메인탑 끝 */
+/* 메인 룸 */
+.mainroom {
+    width: 1320px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mainroom h1 {
+    font-size: 40px;
+}
+
+.mainroom h3 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.typeright {
+    width: 1320px;
+    display: flex;
+}
+
+.typeright img {
+    display: block;
+}
+
+.typeright_1 ul {
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.typeright_1 ul li {
+    margin: 30px 0;
+}
+
+.typeright_1 p {
+    margin-bottom: 50px;
+}
+
+.typeright_1 h3 {
+    margin-bottom: 80px;
+}
+
+.typeright_1 ul a {
+
+    border-radius: 15px;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #575757;
+}
+
+.typeright_1 ul a:hover {
+    color: #fff;
+    background-color: #2b2b2b;
+}
+
+/* 메인 룸 끝 */
+/* 센터 배너 */
+.center {
+    width: 100%;
+    background: url(../image/center_bannerup.png) no-repeat center top fixed;
+    background-size: cover;
+    height: 360px;
+    margin: 120px 0;
+}
+
+.center_banner {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    padding: 120px 0;
+
+}
+
+.center_banner h1 {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.center_banner h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* 센터 배너 끝 */
+/* 메인 이벤트 */
+.mainevent {
+    width: 1320px;
+    margin: auto;
+}
+
+.mainevent h3 {
+    margin: 20px 0;
+}
+
+.mainevent ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainevent ul li {
+    margin-bottom: 60px;
+}
+
+.mainevent p a {
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #575757;
+
+}
+
+.mainevent p a:hover {
+    color: #fff;
+    background-color: #2b2b2b;
+}
+
+.mainevent p {
+    text-align: center;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    padding-top: 60%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 1s;
+}
+
+.mainevent ul li a:hover .box {
+    opacity: 1;
+}
+
+.mainevent ul li a {
+    display: block;
+    overflow: hidden;
+}
+
+.mainevent ul li {
+    overflow: hidden;
+    position: relative;
+}
+
+.mainevent ul li img {
+    transition: 1s;
+    display: block;
+}
+
+.mainevent ul li a:hover img {
+    transform: scale(1.1);
+}
+
+/* 메인 이벤트 끝 */
+/* 메인 인스타 */
+.maininsta {
+    width: 1320px;
+    margin: 80px auto 120px;
+   
+}
+
+.maininsta h3 {
+    margin: 20px 0;
+}
+
+.maininsta ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.maininsta ul li img {
+    display: block;
+    filter: grayscale(1);
+    transition: 0.7s;
+}
+
+.maininsta ul li {
+    margin-bottom: 20px;
+
+
+    overflow: hidden;
+}
+
+.maininsta ul li:hover img {
+    filter: grayscale(0);
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+    border-radius: 25px;
+}
+
+/* 메인인스타 끝 */
+/* 푸터 */
+footer {
+    width: 100%;
+    background-color: #2A2A2A;
+
+}
+
+.fot {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.fot ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot img {
+    margin: 40px 0 0;
+}
+
+.fot h3 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.fotright a img {
+    display: inline-block;
+    margin: 120px 20px 0 0;
+    filter: invert(0.85);
+}
+
+.fotright a:hover img {
+    filter: invert(0);
+}
